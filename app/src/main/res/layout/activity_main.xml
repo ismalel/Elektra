@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_elektra"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="196dp"
+        android:layout_height="103dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/logo" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/llUser"
+        android:layout_width="320dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_circle_edittext_border_silver_500"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/ivIconUser"
+            android:layout_width="32dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_baseline_person_24" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:inputType="textNoSuggestions"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/brandDarkGreen_200"
+            app:hintTextColor="@color/brandDarkGreen_200"
+            tools:ignore="UnknownId"
+            android:layout_toEndOf="@+id/ivIconUser">
+
+            <EditText
+                android:id="@+id/etUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Empleado ID"
+                android:maxLines="2"
+                android:singleLine="true"
+                android:text="123445"
+                android:textColorHint="@color/brandDarkGreen_200"
+                android:textSize="14sp"
+                android:background="@color/colorTransparent"
+                android:translationY="2dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/btnLogin"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/llUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_circle_button_border_red"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:text="Iniciar sesión"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText" />
+
+
+
+</RelativeLayout>
